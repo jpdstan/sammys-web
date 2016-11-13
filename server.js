@@ -1,8 +1,9 @@
 var http = require("http");
 var request = require('request').defaults({encoding:null});
 var express = require("express");
+const path = require('path');
 var app = express();
-app.use(express.static('app'));
+app.use(express.static(path.join(__dirname, 'app')));
 
 http.createServer(app, function(req, res) {
   res.writeHead(200, {
