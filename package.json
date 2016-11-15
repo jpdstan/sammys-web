@@ -9,7 +9,7 @@
     "express": "^4.13.3"
   },
   "scripts": {
-    "postinstall": "bower install",
+    "preinstall": "bower install",
     "prestart": "npm install",
     "start": "node server.js"
   }

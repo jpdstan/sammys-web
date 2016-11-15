@@ -12,9 +12,9 @@ http.createServer(app, function(req, res) {
   res.end();
 }).listen(process.env.PORT || 8080, function() {
 	if (process.env.PORT)
-		debug("Running on port " + process.env.PORT);
+	  debug("Running on port " + process.env.PORT);
 	else
-		debug("Running on port 8080");
+    debug("Running on port 8080");
 });
 
 function debug(text) {
