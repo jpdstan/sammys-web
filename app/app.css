@@ -1,0 +1,31 @@
+#logo {
+	display: block;
+	margin-top: 1vh;
+	margin-left: auto;
+	margin-right: auto;
+	height: 20vh;
+	width: auto;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+	height: 30px;
+	text-align: center;
+	list-style: none;
+	cursor: default;
+}
+
+.navbar li {
+	font-size: 18px;
+	display: inline;
+	margin: 0px 15px;
+	position: static;
+	-webkit-user-select: none;    
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+}
+
+.navbar a {
+	display: inline-block;
+	padding: 8px;
+}
