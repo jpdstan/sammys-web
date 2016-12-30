@@ -14,16 +14,18 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="app.css">
 
-  <base href="/">
+  <base href="/home">
 </head>
 
-<img id="logo" src="img/logo.png"/>
+<div class="logo-container">
+  <img class="logo" src="img/logo.png"/>
+</div>
 
 <nav>
   <ul class="navbar">
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/contact">Contact</a></li>
+    <li><a href="/#!/blog">Blog</a></li>
+    <li><a href="/#!/about">About</a></li>
+    <li><a href="/#!/contact">Contact</a></li>
   </ul>
 </nav>
 
@@ -32,6 +34,8 @@
     <div ng-view></div>
   </div>
 </body>
+
+<foooter>
 
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
