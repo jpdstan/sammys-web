@@ -18,7 +18,7 @@ http.createServer(app, function(req, res) {
 });
 
 function debug(text) {
-	console.log(getTime() + " [Sammys-Debug] " + text);
+  console.log(getTime() + " [Sammys-Debug] " + text);
 }
 
 function getTime() {
