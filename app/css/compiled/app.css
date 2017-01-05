@@ -1,13 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic);
-@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text);
 /* use n*$base-unit for all font-sizing, (vertical) spacing */
 /* GLOBALS */
 body {
   background-color: rgba(239, 226, 255, 0.28); }
 
-p {
-  line-height: 1.5em; }
+h1, h2, h3, h4, li {
+  font-family: "Montserrat", sans-serif; }
+
+span, p {
+  line-height: 1.5em;
+  font-family: "Crimson Text", sans-serif;
+  font-size: 18px; }
 
 /* HEADER, includes logo and navbar */
 .header-container {
@@ -71,17 +75,15 @@ p {
   margin: 1.25em 0;
   background-color: #fefefd;
   box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
-  padding: 1.25em; }
+  padding: 2em; }
+  .blog-container .blog-post-container .blog-image {
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    max-height: 80vh; }
   .blog-container .blog-post-container .blog-header {
-    margin: 0; }
+    margin-top: 0.5em; }
   .blog-container .blog-post-container .blog-date {
     color: #888; }
   .blog-container .blog-post-container .blog-body {
-    margin-top: 1em;
+    margin-top: 1.5em;
     overflow: hidden; }
-    .blog-container .blog-post-container .blog-body .blog-image {
-      box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
-      max-width: 100%;
-      margin: 0.5em 0; }
-    .blog-container .blog-post-container .blog-body p {
-      margin-top: 1em; }
