@@ -6,11 +6,13 @@
   "dependencies": {
     "bower": "^1.7.7",
     "express": "^4.13.3",
+    "node-sass": "^4.1.1",
     "request": "^2.67.0"
   },
   "scripts": {
+    "build-css": "node-sass --include-path scss app/css/app.scss   app/css/compiled/app.css",
     "postinstall": "bower install",
     "prestart": "npm install",
-    "start": "node server.js"
+    "start": "npm run build-css && node server.js"
   }
 }

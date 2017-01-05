@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic);
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
+/* use n*$base-unit for all font-sizing, (vertical) spacing */
+/* GLOBALS */
+body {
+  background-color: #fafafa;
+  font-family: "Old Standard TT", sans-serif; }
+
+p {
+  line-height: 1.5; }
+
+/* LOGO */
+.logo-container .logo {
+  display: block;
+  margin-top: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20vh;
+  width: auto; }
+
+/* BLOG */
+.blog-container {
+  margin: 1em 0; }
+  .blog-container .blog-post-container .blog-body {
+    overflow: hidden;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    margin-top: 1.5em;
+    margin-right: 1.5em; }
+    .blog-container .blog-post-container .blog-body .blog-image {
+      max-width: 100%;
+      margin: 0.5em 0; }
+
+/* NAVIGATION BAR */
+.navbar {
+  height: 0.25em;
+  text-align: center;
+  list-style: none;
+  cursor: default; }
+
+.navbar li {
+  display: inline;
+  margin: 0 1.5em;
+  position: static;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+.navbar a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 0; }
+
+.navbar a, .navbar a:hover, .navbar a:visited {
+  color: inherit; }

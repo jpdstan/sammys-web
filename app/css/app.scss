@@ -1,38 +1,45 @@
+@import 'styleguide';
+
 /* GLOBALS */
+body {
+	background-color: #fafafa;
+	font-family: $font-body;
+}
+
 p {
 	line-height: 1.5;
 }
 
 /* LOGO */
 .logo-container {
-
+	.logo {
+		display: block;
+		margin-top: 2vh;
+		margin-left: auto;
+		margin-right: auto;
+		height: 20vh;
+		width: auto;
+	}
 }
 
-.logo {
-	display: block;
-	margin-top: 2vh;
-	margin-left: auto;
-	margin-right: auto;
-	height: 20vh;
-	width: auto;
-}
 
-.container {
-
-}
 
 /* BLOG */
-.blog-entry {
+.blog-container {
 	margin: 1em 0;
-}
-
-.blog-image {
-	max-width: 100%;
-	margin: 0.5em 0;
-}
-
-.blog-body {
-	margin: 1em 0.5em;
+	.blog-post-container {
+		.blog-body {	
+			overflow: hidden;
+			box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+			padding: 1em;
+			margin-top: 1.5em;
+			margin-right: 1.5em;
+			.blog-image {
+				max-width: 100%;
+				margin: 0.5em 0;
+			}
+		}
+	}
 }
 
 /* NAVIGATION BAR */
