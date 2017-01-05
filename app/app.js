@@ -7,9 +7,6 @@ angular.module('myApp', [
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
-  $routeProvider.when('/home', {
-    templateUrl: 'index.html'
-  });
   $routeProvider.when('/about', {
     templateUrl: 'about/about.html',
     controller: 'AboutCtrl'
@@ -26,5 +23,5 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
     templateUrl: 'view2/view2.html',
     controller: 'View2Ctrl'
   });
-  // $routeProvider.otherwise({redirectTo: '/home'});
+  $routeProvider.otherwise({redirectTo: '/blog'});
 }]);

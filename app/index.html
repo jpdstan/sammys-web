@@ -10,28 +10,25 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/hover/css/hover.css">
   <link rel="stylesheet" href="../css/compiled/app.css">
-
-  <base href="/home">
 </head>
-
-<div class="logo-container">
-  <img class="logo" src="img/logo.png"/>
+<div class="header-container">
+  <div class="logo-container">
+    <img class="logo" src="img/logo.png"/>
+  </div>
+  <nav class="navbar-container">
+    <ul>
+      <a href="/#!/blog"><li>Blog</li></a>
+      <a href="/#!/about"><li>About</li></a>
+      <a href="/#!/contact"><li>Contact</li></a>
+    </ul>
+  </nav>
 </div>
-
-<nav>
-  <ul class="navbar">
-    <li><a href="/#!/blog">Blog</a></li>
-    <li><a href="/#!/about">About</a></li>
-    <li><a href="/#!/contact">Contact</a></li>
-  </ul>
-</nav>
 
 <body>
   <div ng-view></div>
 </body>
-
-<foooter>
 
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
