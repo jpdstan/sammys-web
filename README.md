@@ -1,5 +1,7 @@
 # Official UC Berkeley Sammys website
 
+Check this shit out on [https://sammys.herokuapp.com/](https://sammys.herokuapp.com/)
+
 `npm start` to run on local machine
 
 Forked off `angular-seed` project
